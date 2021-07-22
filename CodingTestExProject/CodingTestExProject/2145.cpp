@@ -5,8 +5,8 @@
 (마지막 입력은 0이며, 0에 대한 결과는 출력하지 않는다.)
 
 0이 들어올때 마지막 \n 제거하는 방법 or 다른 반례가 있나??
+반례 main의 while 문은 N > 10이 아닌 N >= 10이다.
 */
-
 #include<iostream>
 using namespace std;
 
@@ -19,25 +19,30 @@ int sum(int n)
 		sum += n % 10; //3+7
 		n = n / 10;//67 6
 	}
-	
+
 	return sum;
 }
 
 
 int main()
 {
-	int N = -1;
-	while (N != 0)
+	while (true)
 	{
-		int SUM = 0;
-		scanf_s("%d", &N);
-
-		while (N > 10)
+		int N = 0, SUM = 0;
+		cin >> N;
+		if (N == 0)
 		{
-			N = sum(N);
+			break;
 		}
-		if(N != 0)
-			printf_s("%d\n", N);
+		else
+		{
+			while (N >= 10)
+			{
+				N = sum(N);
+			}
+			cout << N << "\n";
+		}
+
 	}
 
 }
