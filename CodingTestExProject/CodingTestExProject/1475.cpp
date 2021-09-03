@@ -2,56 +2,37 @@
 1475 방번호
 방번호를 받으면 0~9까지 수가 들어있는 세트가 몇개가 필요한지
 배열을 만들고 안에서 예외처리
-+
-cin,cout 사용보다 #include<stdio.h>를 추가하여 입출력에 scanf()나 printf()사용을
-익숙하게 하자
 
-#define  _CRT_SECURE_NO_WARNINGS
-scanf unsafe 무시 방법 (출처 : https://hijuworld.tistory.com/47 )
-
-			for (int i = 0; i < 10; i++)
-			{
-				num[i] = 0;
-			}
-
+0 예외처리 안하고 34번 라인을 최대값 찾고 나서 하려고 해서 몇번이나 실패한 문제...
+6과 9를 같은 수로 생각하는게 문제의 주요 포인트이다!
 */
-
-#define  _CRT_SECURE_NO_WARNINGS
 #include<iostream>
-#include <stdio.h>
 using namespace std;
 
 int main()
 {
 	int a;
-	int ans,max = 0;
+	int max = 0;
 	int num[10] = { 0, };
 
-	scanf("%d \n", &a);
+	cin >> a;
 
-	while (a!=0)
+	if (a == 0)
 	{
-		num[a % 10]++;
-
-		a = a / 10;
+		num[0]++;
 	}
-
-	if (num[6] > 1 && num[6] / 2 > num[9])
+	else
 	{
-		while (num[6] / 2 >= num[9])
+		while (a != 0)
 		{
-			num[6]--;
-			num[9]++;
+			int n = a % 10 == 9 ?6: a % 10;
+			num[n]++;
+			a = a / 10;
 		}
+
 	}
-	if (num[9] > 1 && num[9] / 2 > num[6])
-	{
-		while (num[9] / 2 >= num[6])
-		{
-			num[9]--;
-			num[6]++;
-		}
-	}
+
+	num[6] = num[6] % 2 == 0 ? num[6] / 2 : num[6] / 2 + 1;
 
 	for (int i = 0; i < 10; i++)
 	{
@@ -59,8 +40,8 @@ int main()
 		{
 			max = num[i];
 		}
-		
+
 	}
-	ans = max;
-	printf("%d \n", ans);
+
+	cout << max;
 }
