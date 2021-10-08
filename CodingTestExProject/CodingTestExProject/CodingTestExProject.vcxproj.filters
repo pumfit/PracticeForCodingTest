@@ -16,19 +16,13 @@
     <Filter Include="소스 파일\Programmers">
       <UniqueIdentifier>{b0f5a385-9c5a-4bf1-a7cf-7761a6db0333}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\DP">
+      <UniqueIdentifier>{47c7781d-6fb3-4b89-9aa6-740643d78f9b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Weekly_Challenge_1.cpp">
-      <Filter>소스 파일\Programmers</Filter>
-    </ClCompile>
-    <ClCompile Include="Weekly_Challenge_2.cpp">
-      <Filter>소스 파일\Programmers</Filter>
-    </ClCompile>
-    <ClCompile Include="Weekly_Challenge_9.cpp">
-      <Filter>소스 파일\Programmers</Filter>
-    </ClCompile>
-    <ClCompile Include="Weekly_Challenge_8.cpp">
-      <Filter>소스 파일\Programmers</Filter>
+    <ClCompile Include="11726.cpp">
+      <Filter>소스 파일\DP</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
