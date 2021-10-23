@@ -19,13 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="10815.cpp" />
-    <ClCompile Include="10828.cpp" />
-    <ClCompile Include="2019_KAKAO_BLIND_RECRUITMENT_openchating.cpp" />
-    <ClCompile Include="2670cpp.cpp" />
-    <ClCompile Include="2998.cpp" />
-    <ClCompile Include="9946.cpp" />
-    <ClCompile Include="Summer_Winter_Coding(2019)_plain_square.cpp" />
+    <ClCompile Include="5176.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
