@@ -4,7 +4,7 @@
 
 ### Link
 📚 백준 문제집 : jaehoo1님의 중급
-중급 https://www.acmicpc.net/workbook/view/2034
+https://www.acmicpc.net/workbook/view/2034
 
 
 ## 파일 작성 및 달성도
