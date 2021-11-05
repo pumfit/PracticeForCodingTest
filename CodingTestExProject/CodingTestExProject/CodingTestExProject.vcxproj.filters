@@ -21,11 +21,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="9657.cpp">
+    <ClCompile Include="11365.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="target_number.cpp">
-      <Filter>소스 파일\Programmers</Filter>
+    <ClCompile Include="10826.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
