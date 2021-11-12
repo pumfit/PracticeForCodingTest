@@ -1,6 +1,9 @@
 /*
 1748 수 이어 쓰기 1
 
+N = 10000000일때
+Success #stdin #stdout 0s 5636KB
+68888897
 
 맞긴했는데 이거 bf 맞나...?? 전체 탐색해서 푼 풀이는 맞아서 맞은 것 같지만 뭔가 하나하나 탐색한게 아닌 느낌이라
 문제풀이가 맞는지 의문이 들었다.
@@ -41,3 +44,25 @@ int main() {
 	cout << sum;
 	return 0;
 }
+/*
+N = 10000000일때
+Success #stdin #stdout 1.61s 5584KB
+68888897
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	string N;
+	int sum = 0;
+	cin >> N;
+	while(stoi(N)>0)
+	{
+		sum += N.size();
+		N = to_string(stoi(N)-1);
+	}
+	cout<<sum;
+	return 0;
+}
+*/
