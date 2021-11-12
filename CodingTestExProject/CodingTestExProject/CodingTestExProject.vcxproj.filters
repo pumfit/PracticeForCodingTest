@@ -27,5 +27,14 @@
     <ClCompile Include="5567.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="MoreSpicy.cpp">
+      <Filter>소스 파일\Programmers</Filter>
+    </ClCompile>
+    <ClCompile Include="2309.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1748.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
