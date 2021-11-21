@@ -19,10 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="15577.cpp" />
-    <ClCompile Include="15656.cpp" />
-    <ClCompile Include="MakeMin.cpp" />
-    <ClCompile Include="MaxAndMin.cpp" />
+    <ClCompile Include="11650.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
