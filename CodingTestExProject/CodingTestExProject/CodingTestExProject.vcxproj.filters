@@ -21,10 +21,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="8061.cpp">
+    <ClCompile Include="10971.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="14889.cpp">
+    <ClCompile Include="15657.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
