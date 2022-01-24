@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="10814.cpp" />
     <ClCompile Include="11052.cpp" />
     <ClCompile Include="11057.cpp" />
   </ItemGroup>
