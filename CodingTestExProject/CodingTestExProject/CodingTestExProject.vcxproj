@@ -28,6 +28,7 @@
     <ClCompile Include="9465.cpp" />
     <ClCompile Include="dartGame.cpp" />
     <ClCompile Include="reportResult.cpp" />
+    <ClCompile Include="secretMap.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
