@@ -27,6 +27,7 @@
     <ClCompile Include="2460.cpp" />
     <ClCompile Include="9465.cpp" />
     <ClCompile Include="dartGame.cpp" />
+    <ClCompile Include="NewIDrecommendation.cpp" />
     <ClCompile Include="reportResult.cpp" />
     <ClCompile Include="secretMap.cpp" />
   </ItemGroup>
