@@ -23,11 +23,13 @@
     <ClCompile Include="10814.cpp" />
     <ClCompile Include="11052.cpp" />
     <ClCompile Include="11057.cpp" />
+    <ClCompile Include="1141.cpp" />
     <ClCompile Include="1181.cpp" />
     <ClCompile Include="1302.cpp" />
     <ClCompile Include="1531.cpp" />
     <ClCompile Include="1541.cpp" />
     <ClCompile Include="1629.cpp" />
+    <ClCompile Include="2193.cpp" />
     <ClCompile Include="2460.cpp" />
     <ClCompile Include="9465.cpp" />
     <ClCompile Include="dartGame.cpp" />
