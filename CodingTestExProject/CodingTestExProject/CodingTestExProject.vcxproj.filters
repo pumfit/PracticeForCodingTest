@@ -21,27 +21,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="11052.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11057.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="10814.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2460.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="10799.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1629.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="9465.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="reportResult.cpp">
       <Filter>소스 파일\Programmers</Filter>
     </ClCompile>
@@ -57,22 +36,16 @@
     <ClCompile Include="1181.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1541.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="1302.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1531.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2193.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="1141.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="1406.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5397.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
