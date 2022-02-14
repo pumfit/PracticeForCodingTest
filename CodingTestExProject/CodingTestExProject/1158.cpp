@@ -8,6 +8,10 @@ N과 K가 주어지면 (N, K)-요세푸스 순열을 구하는 프로그램을 작성하시오.
 쉬울 줄 알았는데 어려웠던 문제
 처음에 벡터로 풀려고 시도했다가 실패했다. 해당 문제풀이 유형이 많은데 정리하고 다시 풀어봐야할 것 같다.
 큐를 이용한 풀이가 직관적이라 해당 풀이를 참고했다.
+
+220214
+STL list의 이중 연결리스트를 사용한 풀이를 아래와 같이 풀이하였다.
+답 출력 방식을 잘못해서 한번 틀렸다.
 */
 #include <iostream>
 #include <queue>
@@ -39,3 +43,39 @@ int main() {
 	}
 	return 0;
 }
+
+/*
+#include <iostream>
+#include <list>
+using namespace std;
+
+int main() {
+	int N,K;
+	cin>>N>>K;
+	list<int> l;
+	for(int i=0;i<N;i++)
+		l.push_back(i+1);
+	list<int>::iterator iter = l.begin();
+	cout<<"<";
+	while(true)
+	{
+		if(l.size()==1)
+			break;
+		for(int i=0;i<K-1;i++)
+		{
+			iter++;
+			if(iter==l.end())
+				iter = l.begin();
+
+		}
+		cout<<*iter<<", ";
+		iter = l.erase(iter);
+		if(iter==l.end())
+			iter = l.begin();
+
+	}
+	cout<<*l.begin();
+	cout<<">";
+	return 0;
+}
+*/
