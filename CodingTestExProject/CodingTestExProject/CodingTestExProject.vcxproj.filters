@@ -54,12 +54,6 @@
     <ClCompile Include="1182.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="15989.cpp">
-      <Filter>소스 파일\Programmers</Filter>
-    </ClCompile>
-    <ClCompile Include="18258.cpp">
-      <Filter>소스 파일\Programmers</Filter>
-    </ClCompile>
     <ClCompile Include="Tuple.cpp">
       <Filter>소스 파일\Programmers</Filter>
     </ClCompile>
@@ -70,6 +64,15 @@
       <Filter>소스 파일\Programmers</Filter>
     </ClCompile>
     <ClCompile Include="1439.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FindPrimeNumber.cpp">
+      <Filter>소스 파일\Programmers</Filter>
+    </ClCompile>
+    <ClCompile Include="18258.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="15989.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
