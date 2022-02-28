@@ -37,6 +37,7 @@
     <ClCompile Include="newsClustering.cpp" />
     <ClCompile Include="reportResult.cpp" />
     <ClCompile Include="secretMap.cpp" />
+    <ClCompile Include="SortFileName.cpp" />
     <ClCompile Include="Tuple.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
