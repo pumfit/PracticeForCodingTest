@@ -81,5 +81,8 @@
     <ClCompile Include="SortFileName.cpp">
       <Filter>소스 파일\Programmers</Filter>
     </ClCompile>
+    <ClCompile Include="1935.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

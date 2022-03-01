@@ -28,6 +28,7 @@
     <ClCompile Include="1439.cpp" />
     <ClCompile Include="15989.cpp" />
     <ClCompile Include="18258.cpp" />
+    <ClCompile Include="1935.cpp" />
     <ClCompile Include="5397.cpp" />
     <ClCompile Include="CheckDistance.cpp" />
     <ClCompile Include="ColoringBook.cpp" />
