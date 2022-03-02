@@ -36,6 +36,7 @@
     <ClCompile Include="FindPrimeNumber.cpp" />
     <ClCompile Include="NewIDrecommendation.cpp" />
     <ClCompile Include="newsClustering.cpp" />
+    <ClCompile Include="RankOfTheLottery.cpp" />
     <ClCompile Include="reportResult.cpp" />
     <ClCompile Include="secretMap.cpp" />
     <ClCompile Include="SortFileName.cpp" />
