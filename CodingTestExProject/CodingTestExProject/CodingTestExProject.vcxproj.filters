@@ -87,5 +87,8 @@
     <ClCompile Include="RankOfTheLottery.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="MaximizeFormulas.cpp">
+      <Filter>소스 파일\Programmers</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

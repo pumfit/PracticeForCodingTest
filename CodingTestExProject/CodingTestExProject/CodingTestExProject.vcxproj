@@ -34,6 +34,7 @@
     <ClCompile Include="ColoringBook.cpp" />
     <ClCompile Include="dartGame.cpp" />
     <ClCompile Include="FindPrimeNumber.cpp" />
+    <ClCompile Include="MaximizeFormulas.cpp" />
     <ClCompile Include="NewIDrecommendation.cpp" />
     <ClCompile Include="newsClustering.cpp" />
     <ClCompile Include="RankOfTheLottery.cpp" />
