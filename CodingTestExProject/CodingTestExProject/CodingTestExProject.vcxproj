@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="10808.cpp" />
+    <ClCompile Include="10871.cpp" />
     <ClCompile Include="1141.cpp" />
     <ClCompile Include="1158.cpp" />
     <ClCompile Include="1181.cpp" />
@@ -30,6 +32,7 @@
     <ClCompile Include="18258.cpp" />
     <ClCompile Include="1935.cpp" />
     <ClCompile Include="2212.cpp" />
+    <ClCompile Include="3273.cpp" />
     <ClCompile Include="5397.cpp" />
     <ClCompile Include="CheckDistance.cpp" />
     <ClCompile Include="ColoringBook.cpp" />
