@@ -19,33 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="10808.cpp" />
-    <ClCompile Include="10871.cpp" />
-    <ClCompile Include="1141.cpp" />
-    <ClCompile Include="1158.cpp" />
-    <ClCompile Include="1181.cpp" />
-    <ClCompile Include="1182.cpp" />
-    <ClCompile Include="1302.cpp" />
-    <ClCompile Include="1406.cpp" />
-    <ClCompile Include="1439.cpp" />
-    <ClCompile Include="15989.cpp" />
-    <ClCompile Include="18258.cpp" />
-    <ClCompile Include="1935.cpp" />
-    <ClCompile Include="2212.cpp" />
-    <ClCompile Include="3273.cpp" />
-    <ClCompile Include="5397.cpp" />
-    <ClCompile Include="CheckDistance.cpp" />
-    <ClCompile Include="ColoringBook.cpp" />
-    <ClCompile Include="dartGame.cpp" />
-    <ClCompile Include="FindPrimeNumber.cpp" />
-    <ClCompile Include="MaximizeFormulas.cpp" />
-    <ClCompile Include="NewIDrecommendation.cpp" />
-    <ClCompile Include="newsClustering.cpp" />
-    <ClCompile Include="RankOfTheLottery.cpp" />
-    <ClCompile Include="reportResult.cpp" />
-    <ClCompile Include="secretMap.cpp" />
-    <ClCompile Include="SortFileName.cpp" />
-    <ClCompile Include="Tuple.cpp" />
+    <ClCompile Include="10807.cpp" />
+    <ClCompile Include="11328.cpp" />
+    <ClCompile Include="13300.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

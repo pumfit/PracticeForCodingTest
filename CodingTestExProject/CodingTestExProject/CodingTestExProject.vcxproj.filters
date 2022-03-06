@@ -21,85 +21,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="reportResult.cpp">
-      <Filter>소스 파일\Programmers</Filter>
-    </ClCompile>
-    <ClCompile Include="dartGame.cpp">
-      <Filter>소스 파일\Programmers</Filter>
-    </ClCompile>
-    <ClCompile Include="secretMap.cpp">
-      <Filter>소스 파일\Programmers</Filter>
-    </ClCompile>
-    <ClCompile Include="NewIDrecommendation.cpp">
-      <Filter>소스 파일\Programmers</Filter>
-    </ClCompile>
-    <ClCompile Include="1181.cpp">
+    <ClCompile Include="10807.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1302.cpp">
+    <ClCompile Include="13300.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1141.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1406.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="5397.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1158.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1182.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Tuple.cpp">
-      <Filter>소스 파일\Programmers</Filter>
-    </ClCompile>
-    <ClCompile Include="ColoringBook.cpp">
-      <Filter>소스 파일\Programmers</Filter>
-    </ClCompile>
-    <ClCompile Include="newsClustering.cpp">
-      <Filter>소스 파일\Programmers</Filter>
-    </ClCompile>
-    <ClCompile Include="1439.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="FindPrimeNumber.cpp">
-      <Filter>소스 파일\Programmers</Filter>
-    </ClCompile>
-    <ClCompile Include="18258.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="15989.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="CheckDistance.cpp">
-      <Filter>소스 파일\Programmers</Filter>
-    </ClCompile>
-    <ClCompile Include="SortFileName.cpp">
-      <Filter>소스 파일\Programmers</Filter>
-    </ClCompile>
-    <ClCompile Include="1935.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="RankOfTheLottery.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="MaximizeFormulas.cpp">
-      <Filter>소스 파일\Programmers</Filter>
-    </ClCompile>
-    <ClCompile Include="2212.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="10808.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="10871.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="3273.cpp">
+    <ClCompile Include="11328.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
