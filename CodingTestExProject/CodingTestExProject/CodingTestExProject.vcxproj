@@ -25,6 +25,7 @@
     <ClCompile Include="13300.cpp" />
     <ClCompile Include="1926.cpp" />
     <ClCompile Include="2164.cpp" />
+    <ClCompile Include="5427.cpp" />
     <ClCompile Include="5430.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

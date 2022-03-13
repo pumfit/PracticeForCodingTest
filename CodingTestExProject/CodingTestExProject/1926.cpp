@@ -23,6 +23,7 @@ int bfs(int x, int y) {
 	visited[y][x] = 1;
 	q.push({ x,y });
 	int bfsSize = 1;
+	//영역의 크기
 	while (!q.empty())
 	{
 		int x = q.front().first;
@@ -44,7 +45,7 @@ int bfs(int x, int y) {
 			}
 		}
 	}
-	return bfsSize;
+	return bfsSize; //해당 bfs 영역의 크기를 return함
 }
 
 int main() {
@@ -64,7 +65,7 @@ int main() {
 			{
 				int s = bfs(j, i);
 				maxSize = max(s, maxSize);
-				cnt++;
+				cnt++;//영역의 개수를 더함
 			}
 		}
 	}
