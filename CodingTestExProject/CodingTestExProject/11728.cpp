@@ -18,30 +18,30 @@ https://www.youtube.com/watch?v=59fZkZO0Bo4&ab_channel=BaaarkingDog
 #include <iostream>
 using namespace std;
 
-int n,m;
-int a[1000005],b[1000005],c[2000005];
+int n, m;
+int a[1000005], b[1000005], c[2000005];
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(NULL); cout.tie(NULL);
-	cin>>n>>m;
-	for(int i =0;i<n;i++)
-		cin>>a[i];
-	for(int i =0;i<m;i++)
-		cin>>b[i];
+	cin >> n >> m;
+	for (int i = 0; i < n; i++)
+		cin >> a[i];
+	for (int i = 0; i < m; i++)
+		cin >> b[i];
 	int idxA = 0; int idxB = 0;
-	for(int i=0;i<n+m;i++)
+	for (int i = 0; i < n + m; i++)
 	{
-		if(idxB==m)//배열 B를 모두 C에 넣은 경우 
+		if (idxB == m)//배열 B를 모두 C에 넣은 경우 
 			c[i] = a[idxA++];
-		else if(idxA==n)//배열 A를 모두 C에 넣은 경우 
+		else if (idxA == n)//배열 A를 모두 C에 넣은 경우 
 			c[i] = b[idxB++];
-		else if(a[idxA]<=b[idxB])//배열 A,B를 비교해 더 작은 수를 넣음
+		else if (a[idxA] <= b[idxB])//배열 A,B를 비교해 더 작은 수를 넣음
 			c[i] = a[idxA++];
 		else
 			c[i] = b[idxB++];
 	}
-	for(int i =0;i<n+m;i++)
-		cout<<c[i]<<" ";
+	for (int i = 0; i < n + m; i++)
+		cout << c[i] << " ";
 	return 0;
 }
