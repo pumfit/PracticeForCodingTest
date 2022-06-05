@@ -58,3 +58,53 @@ int solution(int n, int k) {
 	}
 	return answer;
 }
+
+/*
+조합 공부하고 나서 변경한 풀이
+next_permutation사용시 꼭 정렬을 진행하도록 한다. 테케 하나 통과 못했는데 해당부분 수정하니 넘어갔다.
+생각해보니 굳이 벡터써서 몇개까지 선택할건지 안하고 i값까지만 넣어주면 되는데 이전에 봤던 코드 영향으로
+그냥 그렇게 쓴것 같다. 이부분은 수정하는게 좋을 것 같다.
+*/
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <set>
+using namespace std;
+
+//소수 판별
+bool isPrime(int n)
+{
+	if (n == 0 || n == 1)
+		return false;
+	for (int i = 2; i * i <= n; i++)
+	{
+		if (n % i == 0)
+			return false;
+	}
+	return true;
+}
+//조합 만들고 소수 판별해서 카운트 올리는 방식
+int solution(string numbers) {
+	int N = numbers.size();
+	int answer = 0;
+	set<int> num;
+	sort(numbers.begin(), numbers.end());
+	for (int i = 1; i <= N; i++)
+	{
+		do {
+			string s = "";
+			for (int j = 0; j < N; j++)
+			{
+				if (j <= i - 1)
+					s += numbers[j];
+			}
+			num.insert(stoi(s));
+		} while (next_permutation(numbers.begin(), numbers.end()));
+	}
+	for (auto n : num)
+	{
+		if (isPrime(n))
+			answer++;
+	}
+	return answer;
+}
