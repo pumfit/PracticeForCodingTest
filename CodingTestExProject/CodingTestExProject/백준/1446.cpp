@@ -74,3 +74,45 @@ int main() {
 	cout << minCost[M];
 	return 0;
 }
+
+/*
+* DP Ç®ÀÌ
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+#define MAX 10001
+
+int main() {
+	int DP[10001] = {0,};
+	int N,D;
+	cin>>N>>D;
+	vector<pair<int,int>> v[10001];
+	fill(DP,DP+10001,MAX);
+	for(int i =0;i<N;i++)
+	{
+		int A,B,C;
+		cin>>A>>B>>C;
+		v[B].push_back({A,C});
+	}
+	DP[0] = 0;
+	for(int i =1;i<=D;i++)
+	{
+		if(v[i].size()==0)
+		{
+			DP[i] = DP[i-1]+1;
+		}
+		else
+		{
+			for(int j = 0;j<v[i].size();j++)
+			{
+				DP[i] = min(DP[i],min(DP[i-1]+1,DP[v[i][j].first]+v[i][j].second));
+
+			}
+		}
+
+	}
+	cout<<DP[D];
+	return 0;
+}
+*/
