@@ -17,6 +17,8 @@ https://school.programmers.co.kr/learn/courses/30/lessons/118667
 https://tech.kakao.com/2022/07/13/2022-coding-test-summer-internship/
 
 해당 문제는 투포인터 방식 문제로 자주 접하지 않은 문제 유형이라 정리가 필요할 것 같다.
+https://www.notion.so/20-3c3d1ff3206b4a22a2f5994f7a45b91a
+
 */
 #include <string>
 #include <vector>
