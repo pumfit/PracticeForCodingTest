@@ -76,3 +76,55 @@ int main() {
 	return 0;
 }
 */
+
+/*
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std; //1 3 5
+
+int binarySearch(vector<int>& v,int st,int ed,int target)
+{
+	int mid = 0;
+	while(st<=ed)
+	{
+		mid = (st+ed)/2;
+		if(v[mid]==target)
+		{
+			return mid;
+		}
+		else if(v[mid]>target)
+		{
+			ed = mid -1;
+		}
+		else
+		{
+			st = mid +1;
+		}
+	}
+	return st;
+}
+
+int main() {
+	vector<int>v;
+	int N,M;
+	cin>>N>>M;
+	int n=0,answer=2e9;
+	while(N--)
+	{
+		cin>>n;
+		v.push_back(n);
+	}
+	sort(v.begin(),v.end());
+	for(int i = 0;i<v.size();i++)
+	{
+		int index = binarySearch(v,0,v.size()-1,v[i]+M);
+		int value = v[index] - v[i];
+		if(value>=M)
+			answer = min(answer,value);
+	}
+	cout<<answer;
+
+	return 0;
+}
+*/
