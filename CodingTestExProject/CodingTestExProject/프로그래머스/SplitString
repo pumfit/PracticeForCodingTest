@@ -1,0 +1,40 @@
+/*
+문자열 나누기
+
+https://school.programmers.co.kr/learn/courses/30/lessons/140108/solution_groups?language=cpp&type=my
+*/
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(string s) {
+    int answer = 0;
+    int index = 0;
+    bool isEnded = false;
+    while(index<s.size())
+    {
+        char x = s[index];
+        int diffCnt = 0; int curCnt = 0;
+        for(int i = index; i<s.size();i++)
+        {
+            if(x==s[i])
+                curCnt++;
+            else
+                diffCnt++;
+            if(curCnt==diffCnt)//회수가 같다면 나누기를 진행하고  x를 교체한다.
+            {
+                 answer++;
+                 index = i + 1;
+                 break;
+            }
+            if(i==s.size()-1)// 문자열이 모두 나눠진 경우
+                isEnded = true;
+        }
+        if(isEnded)
+        {
+            answer++;
+            break;
+        }
+
+    }
