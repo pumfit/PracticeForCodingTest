@@ -83,3 +83,78 @@ int main() {
 	cout<<maxDistance-1;
 	return 0;
 }
+
+
+//bfs 1회만 진행 속도 112ms -> 0ms
+
+#include <iostream>
+#include <algorithm>
+#include <cstring>
+#include <queue>
+using namespace std;
+
+bool visited[52][52] = {0,};
+int safeDistance[52][52] = {0,};
+int map[51][51] = {0,};
+int dx[8] = {0,0,1,-1,1,-1,-1,1};
+int dy[8] = {-1,1,0,0,1,-1,1,-1};
+int maxDistance = 0;
+int N,M;
+queue<pair<int,int>> q;
+void bfs()
+{
+	while(!q.empty())
+	{
+		int cx = q.front().first;
+		int cy = q.front().second;
+		q.pop();
+		for(int i = 0;i<8;i++)
+		{
+			int nx = cx + dx[i];
+			int ny = cy + dy[i];
+			if(visited[nx][ny])
+				continue;
+			if(map[nx][ny]==1)
+				continue;
+			if(nx<0||ny<0||N<=ny||M<=nx)
+				continue;
+			visited[nx][ny] = 1;
+			if(safeDistance[nx][ny]==0||(safeDistance[nx][ny]!=0&&safeDistance[cx][cy] + 1 < safeDistance[nx][ny]))
+				safeDistance[nx][ny] = safeDistance[cx][cy] + 1;
+			q.push({nx,ny});
+		}
+	}
+}
+int main() {
+	cin>>N>>M;
+	for(int i = 0;i<N;i++)
+	{
+		for(int j = 0;j<M;j++)
+		{
+			cin>>map[j][i];
+		}
+	}
+	
+	for(int i = 0;i<N;i++)
+	{
+		for(int j = 0;j<M;j++)
+		{
+			if(map[j][i]==1)
+			{
+				q.push({j,i});
+				safeDistance[j][i] = 1;
+				visited[j][i] = 1;
+			}
+		}
+	}
+	bfs();
+	for(int i = 0;i<N;i++)
+	{
+		for(int j = 0;j<M;j++)
+		{
+			maxDistance = max(maxDistance,safeDistance[j][i]);
+		}
+	}
+	cout<<maxDistance-1;
+	return 0;
+}
