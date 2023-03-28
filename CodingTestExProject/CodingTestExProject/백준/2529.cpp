@@ -2,25 +2,39 @@
 2529 부등호
 https://www.acmicpc.net/problem/2529
 
-다시보기
-
-백트래킹 복습하기 + 다른 유형 확인하기
+string 으로 정답을 구해가는 방식을 생각 해보지 않았는데 값을 아래 방식으로 넘겨 줄  수 있었다.
+자리수에 조심해야하는 문제 비교하는 수 index랑 depth 제한이 K+1 임에 조심해야한다.
 */
 #include <iostream>
 #include <vector>
 #include <algorithm>
 using namespace std;
 
+int K;
 char arr[10];
-int N;
+int num[10];
+int visited[10];
 
-void dfs(int depth,int prev,int visited[],vector<int>& v)
+vector<string> answer;
+
+bool CheckValue(char prev,char next,char op)
 {
-	if(depth==(N+1))
+	if(op == '<')
 	{
-		for(int i = 0;i<v.size();i++)
-			cout<<v[i];
-		cout<<endl;
+		if(prev<next)
+			return true;
+	}else{
+		if(prev>next)
+			return true;
+	}
+	return false;
+}
+
+void BT(int depth,string num)
+{
+	if(depth == (K+1))
+	{
+		answer.push_back(num);
 		return;
 	}
 	
@@ -29,52 +43,25 @@ void dfs(int depth,int prev,int visited[],vector<int>& v)
 		if(visited[i])
 			continue;
 			
-		if(depth==0)
+		if(depth == 0 || CheckValue(num[depth-1],i+'0',arr[depth-1]))
 		{
-			v.push_back(i);
-			visited[i] = 1;
-			dfs(depth+1,i,visited,v);
-			visited[i] = 0;
-			v.pop_back();
-			
-		}
-			
-		if(arr[depth-1]=='<')
-		{
-			if(prev<i)
-			{
-				visited[i] = 1;
-				v.push_back(i);
-				dfs(depth+1,i,visited,v);
-				v.pop_back();
-				visited[i] = 0;
-			}else{
-				return;
-			}
-		}else if(arr[depth-1]=='>')
-		{
-			if(prev>i)
-			{
-				visited[i] = 1;
-				v.push_back(i);
-				dfs(depth+1,i,visited,v);
-				v.pop_back();
-				visited[i] = 0;
-			}else{
-				return;
-			}
+			visited[i] = true;
+			BT(depth+1,num + to_string(i));
+			visited[i] = false;
 		}
 	}
+	
 }
 
 int main() {
-	
-	cin>>N;
-	int visited[10] = {0,};
-	for(int i = 0;i<N;i++)
+	cin>>K;
+	for(int i=0;i<K;i++)
 		cin>>arr[i];
-	vector<int> v;
-	dfs(0,-1,visited,v);
+	BT(0,"");
+	sort(answer.begin(),answer.end());
+	
+	cout<<answer[answer.size()-1]<<endl;
+	cout<<answer[0];
 
 	return 0;
 }
