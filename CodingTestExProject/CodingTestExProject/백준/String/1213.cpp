@@ -1,6 +1,7 @@
 /*
 1213 펠린드롬 만들기
 https://www.acmicpc.net/problem/1213
+
 c++ algorithm의 reverse 함수는 원형을 변경한다.
 */
 #include <iostream>
