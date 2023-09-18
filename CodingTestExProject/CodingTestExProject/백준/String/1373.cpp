@@ -6,6 +6,9 @@
 위 방법을 알고있었는데 바로 적용하지 못해서 아쉬웠던 문제
 자리수가 커서 string,vector를 활용해야한다는 점과
 reverse함수 적절히 활용해서 계산이 편하게 하는게 포인트인 문제
+
+https://www.acmicpc.net/problem/1373
+
 */
 #include <iostream>
 #include <string>
