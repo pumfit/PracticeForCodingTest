@@ -1,5 +1,6 @@
 /*
 1446 지름길
+https://www.acmicpc.net/problem/1446
 
 다익스트라 연습문제로 고른문제지만 읽어보면 DP느낌이 난다.
 이후에 DP로 풀어볼 것
@@ -49,7 +50,7 @@ void findPath(int n)
 			}
 		}
 		if (now + 1 <= M && minCost[now + 1] > curCost + 1) {
-			minCost[now + 1] = curCost + 1;
+			?[now + 1] = curCost + 1;
 			pq.push({ -(curCost + 1),now + 1 });
 		}
 	}

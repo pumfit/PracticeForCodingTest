@@ -1,5 +1,6 @@
 /*
 1463 1로 만들기
+https://www.acmicpc.net/problem/1463
 
 1일때 1
 2일때 2로 나누어짐 1
@@ -29,6 +30,7 @@ using namespace std;
 
 int memo[1000001];
 
+// 나누기를 진행하면서 더 작은 값이 있다면 그 값으로 설정하고 해당 값을 반환한다. 
 int dp(int n)
 {
 	if (memo[n] != 0 || n == 1)
