@@ -1,7 +1,11 @@
 /*
 2234 성곽
-다시풀기
+
 https://www.acmicpc.net/problem/2234
+
+bfs 후 각 영역에 대해 다시 bfs를 돌면서 벽을 허물고 허문 벽이 다른 방이라면 그 방의 크기 값을 더해 방의 크기를 계산했다.
+
++ 방 사이즈 잘못 잡고 방의 크기를 구하는 문제인데 처음에 visited로 거리계산하려 그래서 시간 많이 빼먹었던 문제 bfs 관련 복습 및 비트마스크 응용이라 좋은 예제인 것 같다.
 */
 #include <iostream>
 #include <queue>
@@ -18,7 +22,7 @@ int roomCnt = 0;
 int maxRoomSize = 0;
 int maxMergeRoomSize = 0;
 int N,M;
-int roomSizes[51] = {0,};
+int roomSizes[2501] = {0,};
 
 void findMaxMergeRoomSize(int x,int y,int curType)
 {
@@ -36,7 +40,7 @@ void findMaxMergeRoomSize(int x,int y,int curType)
 		{
 			int nx = cx + dx[i];
 			int ny = cy + dy[i];
-				
+			
 			if(nx<0||ny<0||nx>=N||ny>=M)
 				continue;
 			
@@ -47,8 +51,7 @@ void findMaxMergeRoomSize(int x,int y,int curType)
 					maxMergeRoomSize = max(roomSizes[curType]+roomSizes[room[nx][ny]],maxMergeRoomSize);
 				}
 			}else{
-							
-				if(visited[nx][ny])
+                if(visited[nx][ny])
 					continue;
 				if(room[nx][ny]!=curType)
 					continue;
