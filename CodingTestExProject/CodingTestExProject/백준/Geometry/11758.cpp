@@ -9,6 +9,8 @@ https://www.acmicpc.net/problem/11758
 이때 해당 법선 벡터가 양수라면 왼쪽 음수라면 오른쪽을 가리킨다.
 
 외적 공식 및 정리는 이후에 정리하기
+CCW( Counter Clock Wise) 알고리즘은 3개의 점 A, B, C가  있을 때 이 점 3개를 이은 직선의 방향을 알고자 할 때 유용한 
+
 */
 
 #include <iostream>
