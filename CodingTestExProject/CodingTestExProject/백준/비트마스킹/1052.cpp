@@ -3,30 +3,34 @@
 
 https://www.acmicpc.net/problem/1052
 
-다시풀기
 */
 #include <iostream>
+#include <bitset>
+
 using namespace std;
 
+int MergeBottle(int n) {
+    int count = 0;
+    while (n > 0) {
+        if (n & 1) 
+			count++;
+        n >>= 1;
+    }
+    return count;
+}
+
 int main() {
-	int N, K;
-	cin >> N >> K;
-	int cnt = 0; int sum = 0;
-	while (N > 0)
-	{
-		int i = 0;
-		while ((1 << i + 1) < N)
-		{
-			i++;
-		}
-		N = N - (1 << i);
-		if (cnt == K - 1)
-		{
-			cout << (1 << i) - N << endl;
-			return 0;
-		}
-		cnt++;
-	}
-	cout << -1 << endl;
-	return 0;
+    int N, K;
+    std::cin >> N >> K;
+
+    int bottles = 0;
+
+    while (MergeBottle(N) > K) {
+        N++;
+        bottles++;
+    }
+
+    cout << bottles;
+
+    return 0;
 }
